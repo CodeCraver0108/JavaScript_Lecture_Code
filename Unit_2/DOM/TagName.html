@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <li >C</li>
+    <li>C++</li>
+    <li >Python</li>
+    <li >Java</li>
+    <li >JS</li>
+    <li >PHP</li>
+</body>
+</html>
+<script>
+   const ListItem = document.getElementsByTagName('li')
+   console.log(ListItem[5].innerText)
+
+    for(var i = 0 ; i<ListItem.length; i++){
+        ListItem[i].style.color = 'red'
+    }
+
+//ListItem[4].innerText = 'JavaScript'
+//    ListItem[3].style.fontSize = '30px'
+//    ListItem[2].style.color = 'blue'
+</script>

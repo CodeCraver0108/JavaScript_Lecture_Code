@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Student Registration Form</h1>
+
+        <form id="myForm">
+                <label for="">Enter Student Name</label>
+                <br>
+                <input type="text" id="name">
+                <br> 
+                <label for="">Enter Student Section</label>
+                <br>
+                <input type="text" id="section">
+                <br>
+                <input type="submit">
+        </form>
+</body>
+</html>
+<script>
+   const form = document.getElementById('myForm')
+   console.log(form)
+   form.addEventListener('submit',saveData)
+   const arr = []
+   function saveData(event){
+            event.preventDefault()
+        const studentName = document.getElementById('name').value
+        //console.log(studentName)
+
+        const SectionName = document.getElementById('section').value
+        //console.log(SectionName)
+
+        const data = {
+            Std_Name : studentName,
+            Sec_Name  : SectionName
+        }
+
+       
+        arr.push(data)
+        console.log(arr)
+       
+   }
+
+</script>

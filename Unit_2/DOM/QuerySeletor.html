@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">HeadingOne</h1>
+
+    <p>This is Peragrapgh</p>
+
+    <li class="languages">C</li>
+    <li class="languages">C++</li>
+    <li class="languages">Python</li>
+    <li class="languages">Java</li>
+    <li class="languages">JS</li>
+    <li class="languages">PHP</li>
+
+</body>
+</html>
+<script>
+    const headingTag = document.querySelector('#head1')
+    console.log(headingTag)
+
+    const Pergraph = document.querySelector('p')
+    console.log(Pergraph)
+
+    const ListItem = document.querySelectorAll('.languages')
+    // if you want select multiple element at at time so you have to use querySelectorAll (indexing)
+    console.log(ListItem)
+</script>
